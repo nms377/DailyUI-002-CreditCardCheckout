@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Credit Card Checkout</title>
+	<link rel="stylesheet" href="css/index.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+<body>
+	<div id="container">
+		<h1>Check Out</h1>
+		<div id="paymentContainer">
+			<form action="">
+				<input type="text" name="cardholderName" class="field" id="cardholderName" required>
+				<label for="cardholderName">
+					<span>Name on Card</span>
+				</label>
+				<input type="text" name="cardNum" class="field" id="cardNum" pattern="[0-9]{13,16}" minlength="16" maxlength="16" required>
+				<label for="cardNum">
+					<span>Card Number</span>
+				</label>
+				<input type="text" name="cardExp" class="field" id="cardExp" placeholder="MM / YY" pattern="[0-9]{4}" minlength="4" maxlength="4" required>
+				<label for="cardExp">
+					<span>Expiration Date</span>
+				</label>
+				<input type="text" name="cardCVC" class="field" id="cardCVC" pattern="[0-9]{3,4}" minlength="3" maxlength="4" required>
+				<label for="cardCVC">
+					<span>CVC</span>
+				</label>
+				<input type="text" name="cardZip" class="field" id="cardZip" pattern="[0-9]{5}" minlength="5" maxlength="5" required>
+					<label for="cardZip">
+						<span>Zip Code</span>
+					</label>
+				<button>Pay</button>
+			</form>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
